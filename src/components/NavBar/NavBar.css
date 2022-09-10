@@ -51,12 +51,17 @@
   background-color: transparent;
   color: var(--font-color);
   width: 200px;
-  height: 49px;
+  height: 50px;
   font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.2s;
+}
+
+.navbar-link {
+  width: 100%;
+  text-decoration: none;
 }
 
 .navbar-item:hover {
@@ -84,39 +89,29 @@
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: 60px 150px;
     justify-items: center;
-    
+    position: relative;
+    z-index: 10;
   }
-
+  
   .navbar-displayer {
     display: block;
-    z-index: 1;
   }
 
   .list-container { 
     grid-column-start: 1;
     grid-column-end: 4;
-    align-self: flex-start;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    margin: -150px;
-    z-index: -1;
+    margin-right: 200%;
+    opacity: 0;
+    position: relative;
+    z-index: -10;
   }
 
   .active .list-container {
-    margin: 0px;
-    animation: appear;
-  }
-
-  @keyframes appear {
-    from {
-      z-index: 0;
-    }
-  
-    to {
-      z-index: 1;
-    }
+    margin-right: 0%;
+    opacity: 1;
+    display: flex;
   }
 
   .items-list{
