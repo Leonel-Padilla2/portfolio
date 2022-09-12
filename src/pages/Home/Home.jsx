@@ -1,5 +1,11 @@
 import React from 'react'
 import Button from '../../components/Button/Button'
+import TechCard from '../../components/TechCard/TechCard'
+import htmlLogo from '../../images/html-logo.png'
+import cssLogo from '../../images/css-logo.png'
+import jsLogo from '../../images/js-logo.png'
+import reactLogo from '../../images/react-logo.png'
+import githubLogo from '../../images/github-logo.png'
 import './Home.css'
 
 const Home = () => {
@@ -26,19 +32,30 @@ const Home = () => {
           I am currently studying infotecnology engeneering at the Universidad Jose Cecilio del Valle.
         </p>
 
-        <div className='technologies-container'>
-          <h1>Technologies</h1>
-
-          <div className='technologies-list'>
-            <div>First Technology</div>
-            <div>Second Technology</div>
-            <div>Third Technology</div>
-            <div>Fourth Technology</div>
-            <div>Fifth Technology</div>
-          </div>
-        </div>
-        
       </div>
+
+      <div className='technologies-container'>
+        <h1>Technologies</h1>
+
+        <div className='technologies-list'>
+          <TechCard title='HTML' image={htmlLogo}
+            url='https://developer.mozilla.org/en-US/docs/Web/HTML'
+          />
+          <TechCard title='CSS' image={cssLogo}
+            url='https://developer.mozilla.org/en-US/docs/Web/CSS'
+          />
+          <TechCard title='JavaScript' image={jsLogo}
+            url='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+          />
+          <TechCard title='React' image={reactLogo}
+            url='https://reactjs.org/'
+          />
+          <TechCard title='GitHub' image={githubLogo}
+            url='https://github.com/Leonel-Padilla2'
+          />
+        </div>
+      </div>
+      
     </div>
   )
 }
