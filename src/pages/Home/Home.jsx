@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../components/Button/Button'
 import './Home.css'
 
 const Home = () => {
@@ -13,7 +14,7 @@ const Home = () => {
 
         <h2>Are you in a hurry?</h2>
 
-        <button>Curriculum Here</button>
+        <Button dowload>CURRICULUM HERE</Button>
 
         <p>
           I'm a Front-End developer, I have learned programming basics at the university, since then I've been learning and developing projects.
