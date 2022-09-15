@@ -16,7 +16,7 @@
 .navbar-container {
   background: linear-gradient(#000d0e, #001e1f);
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   height: 60px;
 }
@@ -69,21 +69,23 @@
   transform: scale(1.1);
 }
 
-
-@media screen and (max-width: 1300px) {
-  .items-list {
-    width: 450px;
-  }
-}
-
 @media screen and (max-width: 900px) {
-  .items-list {
-    width: 350px;
+  .navbar-item {
+    width: 180px;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 800px) {
+  .items-list {
+    width: 470px;
+  }
 
+  .navbar-item {
+    width: 160px;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .navbar-container {
     display: grid;
     grid-template-columns: repeat(2, 50%);

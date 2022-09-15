@@ -37,7 +37,8 @@
 }
 
 .about-me-container > p {
-  padding: 0px 50px 0px 50px;
+  padding: 0px 50px;
+  text-align: justify;
 }
 
 .technologies-container {
@@ -53,4 +54,20 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+
+@media screen and (max-width: 600px) {
+
+  .technologies-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 120px);
+    align-items: center;
+    justify-items: center;
+  }
+
+  .about-me-container > p {
+    padding: 0px 20px;
+  }
+  
 }
