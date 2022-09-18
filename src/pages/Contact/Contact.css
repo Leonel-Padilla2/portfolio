@@ -1,0 +1,85 @@
+.contact-container {
+  min-height: 100vh;
+  background-color: white;
+  display: grid;
+  align-content: space-evenly;
+}
+
+.social-media-container {
+  background-color: whitesmoke;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.social-media-container h2 {
+  text-align: center;
+}
+
+.social-media-container .list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.message-form {
+  background-color: #fffaaa;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 10px;
+  height: 400px;
+}
+
+.message-form > h2 {
+  width: 100%;
+  text-align: center;
+  font-size: initial;
+}
+
+.message-form > * {
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+.message-form > .input {
+  height: 40px;
+  width: 350px;
+  border-radius: 5px;
+}
+
+.message-form > textarea {
+  min-width: 600px;
+  max-width: 600px;
+  min-height: 150px;
+  max-height: 150px;
+  border-radius: 5px;
+}
+
+.message-form > .button {
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 650px) {
+  .message-form {
+    align-items: center;
+  }
+
+  .message-form > .input {
+    width: 90%;
+  }
+  
+  .message-form > textarea {
+    min-width: 90%;
+    max-width: 90%;
+  }
+
+  .message-form > .button {
+    align-self: flex-start;
+    margin-left:5%;
+  }
+}
