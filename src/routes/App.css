@@ -1,0 +1,14 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.app-container {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  width: 1200px;
+}

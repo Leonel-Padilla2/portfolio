@@ -1,0 +1,53 @@
+.input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  height: 40px;
+  width: 350px;
+  border-radius: 5px;
+}
+
+.input:invalid[focused="true"] {
+  border: 1px solid red;
+  animation: invalidInput 0.2s 1;
+}
+
+@keyframes invalidInput {
+  0% {
+    transform: translateX(0px);
+  }
+
+  25% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.input-error-message {
+  display: block;
+  color: red;
+}
+
+.textarea {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  min-height: 150px;
+  max-height: 150px;
+  min-width: 600px;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+.textarea:invalid[focused="true"] {
+  border: 1px solid red;
+  animation: invalidInput 0.2s 1;
+}
+
