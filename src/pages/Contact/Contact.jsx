@@ -4,6 +4,7 @@ import githubLogo from '../../images/github-logo.png'
 import linkedinLogo from '../../images/linkedin-logo.png'
 import gmailLogo from '../../images/gmail-logo.png'
 import './Contact.css'
+import ContactForm from '../../components/Form/ContactForm'
 
 const Contact = () => {
   return (
@@ -24,20 +25,7 @@ const Contact = () => {
         </div>
       </div>
       
-      <form className='message-form'>
-        <h2>Or leave a message</h2>
-
-        <label className='label'>Name</label>
-        <input className='input' type="text" placeholder='Your Name'/>
-
-        <label className='label'>Company</label>
-        <input className='input' type="text" placeholder='Company Name (Optional)'/>
-
-        <label className='label'>Message</label>
-        <textarea placeholder='Message Here.'/>
-
-        <button className='button'>Send</button>
-      </form>
+      <ContactForm/>
 
     </div>
   )
