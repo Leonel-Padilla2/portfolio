@@ -1,3 +1,8 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .input, .textarea {
   outline: none;
   font-size: 15px;
@@ -41,8 +46,12 @@
 }
 
 .input-error-message {
-  display: block;
+  display: none;
   color: red;
+}
+
+.input:invalid ~ .input-error-message {
+  display: block;
 }
 
 .textarea {
@@ -57,6 +66,9 @@
   border-bottom-color: gray;
 }
 
+.textarea:invalid ~ .input-error-message {
+  display: block;
+}
 
 
 
