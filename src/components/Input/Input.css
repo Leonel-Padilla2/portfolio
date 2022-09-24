@@ -1,16 +1,26 @@
-.input {
-  border: none;
+.input, .textarea {
   outline: none;
   font-size: 15px;
   height: 40px;
   width: 350px;
+  padding: 0px 5px;
+  border: 3px solid transparent;
+  border-bottom-color: gray;
+  background-color: whitesmoke;
+  transition: 0.3s;
+}
+
+.input:invalid[focused="true"], textarea:invalid[focused="true"]{
+  border-color: transparent;
+  border-bottom-color: red;
+  animation: invalidInput 0.2s 1;
+}
+
+.input:hover,:focus, .textarea:hover,:focus {
+  border: 3px solid #7a9cc6;
   border-radius: 5px;
 }
 
-.input:invalid[focused="true"] {
-  border: 1px solid red;
-  animation: invalidInput 0.2s 1;
-}
 
 @keyframes invalidInput {
   0% {
@@ -43,11 +53,10 @@
   max-height: 150px;
   min-width: 600px;
   max-width: 600px;
-  border-radius: 5px;
+  border: 3px solid transparent;
+  border-bottom-color: gray;
 }
 
-.textarea:invalid[focused="true"] {
-  border: 1px solid red;
-  animation: invalidInput 0.2s 1;
-}
+
+
 
