@@ -21,11 +21,15 @@
   animation: invalidInput 0.2s 1;
 }
 
-.input:hover,:focus, .textarea:hover,:focus {
+.input:hover, .textarea:hover {
   border: 3px solid #7a9cc6;
   border-radius: 5px;
 }
 
+.input:focus, .textarea:focus {
+  border: 3px solid #7a9cc6;
+  border-radius: 5px;
+}
 
 @keyframes invalidInput {
   0% {
