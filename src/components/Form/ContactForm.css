@@ -1,0 +1,40 @@
+.message-form {
+  background-color: #fffaaa;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  padding: 10px;
+  height: 500px;
+}
+
+.message-form > h2 {
+  width: 100%;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 650px) {
+  .message-form {
+    align-items: center;
+  }
+
+  .message-form > .input {
+    width: 90%;
+  }
+  
+  .message-form > .textarea {
+    min-width: 90%;
+    max-width: 90%;
+  }
+
+  .message-form > .button {
+    align-self: flex-start;
+    margin-left:5%;
+  }
+
+  .message-form > .input-error-message, .input-label {
+    align-self: flex-start;
+    margin-left: 4%;
+  }
+}
