@@ -1,5 +1,6 @@
 import './ContactForm.css'
 import Input from '../Input/Input'
+import Button from '../Button/Button'
 
 const ContactForm = () => {
   
@@ -8,7 +9,7 @@ const ContactForm = () => {
         <h2>Or leave a message</h2>
 
         <Input
-          className='input-form'
+          className='form-input'
           label='Name'
           placeholder='Name'
           type='text'
@@ -17,14 +18,14 @@ const ContactForm = () => {
           pattern='^[A-za-z ]{3,20}'
         />
         <Input 
-          className='input-form'
+          className='form-input'
           label='Company'
           placeholder='Company Name (Optional)'
           type='text'
         />
 
         <Input
-          className='textarea-form'
+          className='form-textarea'
           textarea
           label='Message'
           placeholder='Message Here'
@@ -32,7 +33,11 @@ const ContactForm = () => {
           errorMessage='This field is required.'
         />
 
-        <button className='button'>Send</button>
+        <Button 
+         className='form-button'
+        >
+          Send Message
+        </Button>
       </form>
   )
 }

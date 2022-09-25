@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5px;
+  gap: 10px;
   padding: 10px;
   height: 500px;
 }
@@ -20,13 +20,10 @@
     padding: 0px;
   }
 
-  .message-form > .input-form, .textarea-form {
+  .message-form > .form-input, .form-textarea {
     min-width: 90%;
     max-width: 90%;
   }
 
-  .message-form > .button {
-    align-self: flex-start;
-    margin-left: 5%;
-  }
+  
 }
