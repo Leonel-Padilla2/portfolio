@@ -11,7 +11,7 @@
   padding: 0px 5px;
   border: 3px solid transparent;
   border-bottom-color: gray;
-  background-color: whitesmoke;
+  background-color: white;
   transition: 0.3s;
 }
 
@@ -75,4 +75,10 @@
 }
 
 
-
+@media screen and (max-width: 650px) {
+  .input, .textarea {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0px;
+  }
+}

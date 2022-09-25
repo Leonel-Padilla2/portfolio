@@ -8,6 +8,7 @@ const ContactForm = () => {
         <h2>Or leave a message</h2>
 
         <Input
+          className='input-form'
           label='Name'
           placeholder='Name'
           type='text'
@@ -16,12 +17,14 @@ const ContactForm = () => {
           pattern='^[A-za-z ]{3,20}'
         />
         <Input 
+          className='input-form'
           label='Company'
           placeholder='Company Name (Optional)'
           type='text'
         />
 
         <Input
+          className='textarea-form'
           textarea
           label='Message'
           placeholder='Message Here'

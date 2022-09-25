@@ -3,14 +3,14 @@ import './Input.css'
 
 const Input = (props) => {
   const [focused, setFocused] = useState(false)
-  const {label, errorMessage, textarea, ...remainingProps} = props
+  const {label, errorMessage, textarea, className, ...remainingProps} = props
 
   const handleOnBlur = () => {
     setFocused(true)
   }
 
   return (
-    <div className='input-container'>
+    <div className={`input-container ${className}`}>
       <label className='input-label'>{label}</label>
       {
         textarea ?
