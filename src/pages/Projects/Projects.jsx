@@ -1,77 +1,26 @@
+import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import './Projects.css'
 
 const Projects = () => {
+  const projects = [
+    {
+      img: '',
+      title : 'Personal Portfolio',
+      gitHubURL: '',
+      deployedURL: '',
+      sumary: 'This is my personal portfolio which I have developed in order to show my personal projects.'
+    }
+  ]
   return (
     <div className='projects-container'>
       <h2>These are the projects I have worked on</h2>        
 
       <div className='projects-grid'>
 
-        <div className='card'>
-          <img src='' alt="project-illustation"/>
-          <h2>Project Title</h2>
-
-          <div className='card-overlay'>
-            Project URLs
-          </div>
-        </div>
-        <div className='card'>
-          <img src='' alt="project-illustation"/>
-          <h2>Project Title</h2>
-
-          <div className='card-overlay'>
-            Project URLs
-          </div>
-        </div>
-        <div className='card'>
-          <img src='' alt="project-illustation"/>
-          <h2>Project Title</h2>
-
-          <div className='card-overlay'>
-            Project URLs
-          </div>
-        </div>
-        <div className='card'>
-          <img src='' alt="project-illustation"/>
-          <h2>Project Title</h2>
-
-          <div className='card-overlay'>
-            Project URLs
-          </div>
-        </div>
-        <div className='card'>
-          <img src='' alt="project-illustation"/>
-          <h2>Project Title</h2>
-
-          <div className='card-overlay'>
-            Project URLs
-          </div>
-        </div>
-        <div className='card'>
-          <img src='' alt="project-illustation"/>
-          <h2>Project Title</h2>
-
-          <div className='card-overlay'>
-            Project URLs
-          </div>
-        </div>
-        <div className='card'>
-          <img src='' alt="project-illustation"/>
-          <h2>Project Title</h2>
-
-          <div className='card-overlay'>
-            Project URLs
-          </div>
-        </div>
-        <div className='card'>
-          <img src='' alt="project-illustation"/>
-          <h2>Project Title</h2>
-
-          <div className='card-overlay'>
-            Project URLs
-          </div>
-        </div>
-
+        {projects.map(project => {
+          return <ProjectCard project={project}/>
+        })}
+        
       </div>
       
     </div>
