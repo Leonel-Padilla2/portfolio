@@ -1,10 +1,11 @@
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
+import PortFolioImage from '../../images/portfolio-image.png'
 import './Projects.css'
 
 const Projects = () => {
   const projects = [
     {
-      img: '',
+      img: PortFolioImage,
       title : 'Personal Portfolio',
       gitHubURL: '',
       deployedURL: '',
