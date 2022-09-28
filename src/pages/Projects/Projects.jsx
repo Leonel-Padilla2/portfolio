@@ -7,7 +7,7 @@ const Projects = () => {
     {
       img: PortFolioImage,
       title : 'Personal Portfolio',
-      gitHubURL: '',
+      gitHubURL: 'https://github.com/Leonel-Padilla2/portfolio',
       deployedURL: '',
       sumary: 'This is my personal portfolio which I have developed in order to show my personal projects.'
     },
@@ -52,8 +52,8 @@ const Projects = () => {
     <div className='projects-container'>
       <h2>These are the projects I have worked on</h2>        
       <p>
-        All projects here helped me to improve my development skills, every single project is totaly different with each other, 
-        that's why all of them compelled me to investigate, understand and learn new skills and subjects necesary for development.
+        Every projects here helped me to improve my development skills, every single project is totaly different with each other, 
+        that's why all of them compelled me to investigate, understand and learn new skills and subjects necesary for its development.
       </p>
 
       <div className='projects-grid'>

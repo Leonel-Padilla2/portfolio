@@ -3,10 +3,17 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  gap: 15px;
+  text-align: justify;
 } 
 
 .projects-container > h2 {
+  margin-top: 20px;
   text-align: center;
+}
+
+.projects-container > p {
+  padding: 0px 10px;
 }
 
 .projects-grid {
