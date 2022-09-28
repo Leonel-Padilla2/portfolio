@@ -57,8 +57,8 @@ const Projects = () => {
 
       <div className='projects-grid'>
 
-        {projects.map(project => {
-          return <ProjectCard project={project}/>
+        {projects.map((project, index) => {
+          return <ProjectCard key={index} project={project}/>
         })}
         
       </div>
