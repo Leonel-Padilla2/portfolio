@@ -30,9 +30,11 @@
   grid-template-columns: repeat(2, 50%);
   align-items: center;
   justify-items: center;
+  z-index: -1;
 }
 
 .card:hover > .card-overlay {
+  z-index: 0;
   opacity: 1;
 }
 
