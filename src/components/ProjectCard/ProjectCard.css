@@ -13,9 +13,12 @@
 }
 
 .card > img {
-  width: 80%; 
+  width: 78%; 
   height: 90%;
-  border-radius: 10px;
+}
+
+.card > h2 {
+  font-size: 23px;
 }
 
 .card-overlay {
@@ -44,7 +47,7 @@
   grid-column-end: 3;
   align-self: start;
   text-align: justify;
-  padding: 5px;
+  padding: 10px;
 }
 
 .overlay-link > * {
