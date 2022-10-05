@@ -6,6 +6,25 @@ import gmailLogo from '../../images/gmail-logo.png'
 import './Contact.css'
 import ContactForm from '../../components/Form/ContactForm'
 
+/*Array which contains social media info in order to map it and show them.*/ 
+const socialMedia = [
+  {
+    title: 'GitHub',
+    image: githubLogo,
+    url  : 'https://github.com/Leonel-Padilla2'
+  },
+  {
+    title: 'Linkedin',
+    image: linkedinLogo,
+    url  : 'https://linkedin.com/in/axcel-leonel-sánchez-padilla-444833243'
+  },
+  {
+    title: 'Email',
+    image: gmailLogo,
+    url  : 'mailto:axcelpadilla17@gmail.com'
+  }
+]
+
 const Contact = () => {
   return (
     <div className='contact-container'>
@@ -13,15 +32,11 @@ const Contact = () => {
       <div className='social-media-container'>
         <h2>Contact me Here</h2>
         <div className='list'>
-          <TechCard title='GitHub' image={githubLogo}
-            url='https://github.com/Leonel-Padilla2'
-          />
-          <TechCard title='Linkedin' image={linkedinLogo}
-            url='https://linkedin.com/in/axcel-leonel-sánchez-padilla-444833243'
-          />
-          <TechCard title='Email' image={gmailLogo}
-            url='mailto:axcelpadilla17@gmail.com'
-          />
+          {
+            socialMedia.map( ({title, image, url}) => 
+              <TechCard title={title} image={image} url={url}/>
+            )
+          }
         </div>
       </div>
       
