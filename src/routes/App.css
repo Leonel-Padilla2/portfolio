@@ -3,6 +3,12 @@
   margin: 0px;
 }
 
+:root{  
+  --main-font: 'Lato', sans-serif;
+  --font-color: #fff;
+  --main-color: #000;
+}
+
 .app-container {
   background-color: gray;
   display: flex;

@@ -5,16 +5,8 @@
   padding: 0px;
 }
 
-:root{  
-  --main-font: 'Lato', sans-serif;
-  --font-color: #fff;
-  --main-color: #001e1f;
-  --secondary-color: #000d0e;
-  --slighter-color: #005155;
-}
-
 .navbar-container {
-  background: linear-gradient(#000d0e, #001e1f);
+  background-color: var(--main-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
