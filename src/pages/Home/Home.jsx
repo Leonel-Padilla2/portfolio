@@ -69,7 +69,7 @@ const Home = () => {
         <div className='technologies-list'>
           {
             technologies.map(({title, image, url}) => 
-              <TechCard title={title} image={image} url={url}/>
+              <TechCard key={title} title={title} image={image} url={url}/>
             )
           }
 

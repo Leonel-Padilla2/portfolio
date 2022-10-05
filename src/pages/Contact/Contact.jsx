@@ -34,7 +34,7 @@ const Contact = () => {
         <div className='list'>
           {
             socialMedia.map( ({title, image, url}) => 
-              <TechCard title={title} image={image} url={url}/>
+              <TechCard key={title} title={title} image={image} url={url}/>
             )
           }
         </div>
