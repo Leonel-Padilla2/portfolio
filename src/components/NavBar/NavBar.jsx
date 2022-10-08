@@ -1,21 +1,40 @@
 import React from 'react'
 import { useState } from 'react'
 import menuLogo from  '../../images/menu-logo.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import './NavBar.css'
+
+const navBarRoutes = [
+  {
+    route : '/',
+    title :'Home'
+  },
+  {
+    route : '/projects',
+    title :'Projects'
+  },
+  {
+    route : '/contact',
+    title :'Contact Me'
+  }
+  
+]
 
 const NavBar = () => {
   const [activated, setActivated] = useState(false)
-  
+  const navigate = useNavigate()
+
   const toggleActive = () => {
-    setActivated(curreent => !curreent)
+    if (window.innerWidth <= 600){
+      setActivated(curreent => !curreent)
+    }
   }
 
-
   return (
-    <header className={`navbar-container ${activated ? 'active' : ''}`}>
-
-      <h2>LOGO</h2>
+    <header className={`navbar-container ${activated && 'active'}`}>
+      <h2 onClick={()=> navigate('/')}>
+        Axcel P.
+      </h2>
 
       <button 
         className='navbar-displayer'
@@ -26,26 +45,18 @@ const NavBar = () => {
 
       <nav className='list-container'>
         <ul className='items-list'>
-          <Link 
-            className='navbar-link'
-            to='/'
-          >
-            <li className='navbar-item'>Home</li>
-          </Link>
-
-          <Link 
-            className='navbar-link' 
-            to='/projects'
-          >
-            <li className='navbar-item'>Projects</li>
-          </Link>
-          
-          <Link 
-            className='navbar-link'
-            to='/contact'
-          >
-            <li className='navbar-item'>Contact Me</li>
-          </Link>
+          {
+            navBarRoutes.map(({title, route}) =>
+            <Link 
+              key={route}
+              onClick={toggleActive}
+              className='navbar-link' 
+              to={route}
+            >
+              <li className='navbar-item'>{title}</li>
+            </Link>
+            )
+          }
         </ul>
       </nav>
 

@@ -8,6 +8,35 @@ import reactLogo from '../../images/react-logo.png'
 import githubLogo from '../../images/github-logo.png'
 import './Home.css'
 
+/*Array which contains Technologies info in order to map it and show them.*/ 
+const technologies = [
+  {
+    title: 'HTML',
+    image: htmlLogo,
+    url  : 'https://developer.mozilla.org/en-US/docs/Web/HTML'
+  },
+  {
+    title: 'CSS',
+    image: cssLogo,
+    url  : 'https://developer.mozilla.org/en-US/docs/Web/CSS'
+  },
+  {
+    title: 'JavaScript',
+    image: jsLogo,
+    url  : 'https://developer.mozilla.org/en-US/docs/Web/JavaScript'
+  },
+  {
+    title: 'React',
+    image: reactLogo,
+    url  : 'https://reactjs.org/'
+  },
+  {
+    title: 'GitHub',
+    image: githubLogo,
+    url  : 'https://github.com/Leonel-Padilla2'
+  }
+]
+
 const Home = () => {
   return (
     <div className='home-container'>
@@ -38,21 +67,12 @@ const Home = () => {
         <h1>Technologies</h1>
 
         <div className='technologies-list'>
-          <TechCard title='HTML' image={htmlLogo}
-            url='https://developer.mozilla.org/en-US/docs/Web/HTML'
-          />
-          <TechCard title='CSS' image={cssLogo}
-            url='https://developer.mozilla.org/en-US/docs/Web/CSS'
-          />
-          <TechCard title='JavaScript' image={jsLogo}
-            url='https://developer.mozilla.org/en-US/docs/Web/JavaScript'
-          />
-          <TechCard title='React' image={reactLogo}
-            url='https://reactjs.org/'
-          />
-          <TechCard title='GitHub' image={githubLogo}
-            url='https://github.com/Leonel-Padilla2'
-          />
+          {
+            technologies.map(({title, image, url}) => 
+              <TechCard key={title} title={title} image={image} url={url}/>
+            )
+          }
+
         </div>
       </div>
       

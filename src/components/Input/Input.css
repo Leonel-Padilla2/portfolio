@@ -1,15 +1,34 @@
-.input {
-  border: none;
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input, .textarea {
   outline: none;
   font-size: 15px;
   height: 40px;
   width: 350px;
+  padding: 0px 5px;
+  border: 3px solid transparent;
+  border-bottom-color: gray;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.input:invalid[focused="true"], textarea:invalid[focused="true"]{
+  border-color: transparent;
+  border-bottom-color: red;
+  animation: invalidInput 0.2s 1;
+}
+
+.input:hover, .textarea:hover {
+  border: 3px solid #7a9cc6;
   border-radius: 5px;
 }
 
-.input:invalid[focused="true"] {
-  border: 1px solid red;
-  animation: invalidInput 0.2s 1;
+.input:focus, .textarea:focus {
+  border: 3px solid #7a9cc6;
+  border-radius: 5px;
 }
 
 @keyframes invalidInput {
@@ -31,8 +50,12 @@
 }
 
 .input-error-message {
-  display: block;
+  display: none;
   color: red;
+}
+
+.input:invalid ~ .input-error-message {
+  display: block;
 }
 
 .textarea {
@@ -43,11 +66,19 @@
   max-height: 150px;
   min-width: 600px;
   max-width: 600px;
-  border-radius: 5px;
+  border: 3px solid transparent;
+  border-bottom-color: gray;
 }
 
-.textarea:invalid[focused="true"] {
-  border: 1px solid red;
-  animation: invalidInput 0.2s 1;
+.textarea:invalid ~ .input-error-message {
+  display: block;
 }
 
+
+@media screen and (max-width: 650px) {
+  .input, .textarea {
+    max-width: 100%;
+    min-width: 100%;
+    padding: 0px;
+  }
+}
