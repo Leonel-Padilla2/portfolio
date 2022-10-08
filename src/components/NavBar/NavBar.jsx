@@ -4,6 +4,7 @@ import menuLogo from  '../../images/menu-logo.png'
 import { Link, useNavigate } from 'react-router-dom'
 import './NavBar.css'
 
+/*Array which contains routes info in order to map it and show them.*/
 const navBarRoutes = [
   {
     route : '/',
