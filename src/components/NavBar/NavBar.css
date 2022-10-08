@@ -15,6 +15,7 @@
 
 .navbar-container h2 {
   color: var(--font-color);
+  cursor: pointer;
 }
 
 .list-container {
