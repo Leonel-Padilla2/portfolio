@@ -3,6 +3,9 @@ import emailjs from '@emailjs/browser';
 import Input from '../Input/Input'
 import Button from '../Button/Button'
 import { useRef } from 'react'
+import { useContext } from 'react';
+import { ModalContext } from '../../contexts/ModalContext';
+import { useNavigate } from 'react-router-dom';
 
 /*Array which contains inputs info in order to map it and show them.*/ 
 const inputs = [
@@ -36,16 +39,28 @@ const inputs = [
 const ContactForm = () => {
   /*Form Ref, using uncontrolled form because the emailJS documentation recommends it.*/
   const form = useRef();
+  const {setModalData, setOnClose} = useContext(ModalContext)
+  const navigate = useNavigate()
+
+  const modalOnClose = () => {
+    setModalData(current => ({current, visible: false}))
+    navigate('/')
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_28gxw4a', 'template_zu8pyxo', form.current, 'cYn8PguqtTvgvwUmo')
-    .then((result) => {
-      console.log(result.text);
-    }, (error) => {
-      console.log(error.text);
-    });      
+    .then(() => {
+      setOnClose(()=>modalOnClose)
+      setModalData({
+        visible: true, 
+        title: 'Thanks for writting', 
+        message: 'Message sent successfully, I will get in touch with you as soon as posible.'
+      })
+    }, () => {
+      setModalData({visible: true, title: 'Error', message: 'Sorry, there was an error, try again'})
+    });
   };
   
   return (
