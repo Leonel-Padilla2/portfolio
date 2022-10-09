@@ -34,18 +34,15 @@ const Projects = () => {
     <div className='projects-container'>
       <h2>These are the projects I have worked on</h2>        
       <p>
-        Every projects here helped me to improve my development skills, every single project is totaly different with each other, 
+        Every project here helped me to improve my development skills, every single project is totaly different with each other, 
         that's why all of them compelled me to investigate, understand and learn new skills and subjects necesary for its development.
       </p>
 
       <div className='projects-grid'>
-
-        {projects.map((project, index) => {
-          return <ProjectCard key={index} project={project}/>
-        })}
-        
+        {
+          projects.map( project => <ProjectCard key={project.title} project={project}/>)
+        }
       </div>
-      
     </div>
   )
 

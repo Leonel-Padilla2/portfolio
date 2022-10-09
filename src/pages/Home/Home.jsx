@@ -40,15 +40,14 @@ const technologies = [
 const Home = () => {
   return (
     <div className='home-container'>
-      <div className='about-me-container'>
 
+      <div className='about-me-container'>
         <div className='name-container'>
           <h2 className='about-me-name'>Axcel Sánchez P.</h2>
           <span>Front-End Developer</span>
         </div>
 
         <h2>Are you in a hurry?</h2>
-
         <Button dowload>CURRICULUM HERE</Button>
 
         <p>
@@ -60,19 +59,14 @@ const Home = () => {
           I'm a Front-End developer, I am currently working with HTML, CSS, JavaScript and React, 
           I am currently studying infotecnology engeneering at the Universidad Jose Cecilio del Valle.
         </p>
-
       </div>
 
       <div className='technologies-container'>
         <h1>Technologies</h1>
-
         <div className='technologies-list'>
           {
-            technologies.map(({title, image, url}) => 
-              <TechCard key={title} title={title} image={image} url={url}/>
-            )
+            technologies.map( technology => <TechCard key={technology.title} {...technology}/>)
           }
-
         </div>
       </div>
       

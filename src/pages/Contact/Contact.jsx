@@ -30,12 +30,10 @@ const Contact = () => {
     <div className='contact-container'>
       
       <div className='social-media-container'>
-        <h2>Contact me Here</h2>
+        <h2>Contact me here</h2>
         <div className='list'>
           {
-            socialMedia.map( ({title, image, url}) => 
-              <TechCard key={title} title={title} image={image} url={url}/>
-            )
+            socialMedia.map(socialNet => <TechCard key={socialNet.title} {...socialNet}/>)
           }
         </div>
       </div>
