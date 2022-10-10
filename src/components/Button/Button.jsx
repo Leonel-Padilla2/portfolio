@@ -7,19 +7,14 @@ const Button = ({children, dowload, className}) => {
   return (
     <button 
       className={`custom-button ${className}`}
-      
     >
-      <h4>
-        {children}
-      </h4>
-
+      <h4>{children}</h4>
       {
         dowload ? 
           <img src={dowloadLogo} alt='dowload icon'/>
         :
           <img src={sendLogo} alt='dowload icon'/>
       }
-      
     </button>
   )
 }
