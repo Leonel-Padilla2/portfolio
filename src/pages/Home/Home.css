@@ -5,7 +5,6 @@
 }
 
 .home-container {
-  background-color: whitesmoke;
   min-height: 100vh;
   padding: 10px;
 }
@@ -52,6 +51,12 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+}
+
+@media screen and (max-height: 750px) {
+  .about-me-container {
+    gap: 15px;
+  }
 }
 
 @media screen and (max-width: 600px) {

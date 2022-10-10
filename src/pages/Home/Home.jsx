@@ -51,13 +51,11 @@ const Home = () => {
         <Button dowload>CURRICULUM HERE</Button>
 
         <p>
-          I'm a Front-End developer, I have learned programming basics at the university, since then I've been learning and developing projects.
-          Sort of 1 year ago I started learning HTML, CSS, JavaScript and React and I decided I wanted to learn as much as I could about it,
-          so I have been developing pojects by myself, also, I had the oportunity to participate on international events where I 
-          worked on teams with people all arround the world.
+          I'm a Front-end Web developer, I'm always looking for new things to learn, I consider myself an autodidact, I like to learn new things 
+          and I'm good at it whether by myself or being helped by a teammate.
 
-          I'm a Front-End developer, I am currently working with HTML, CSS, JavaScript and React, 
-          I am currently studying infotecnology engeneering at the Universidad Jose Cecilio del Valle.
+          I have had the opportunity to develop projects with people all around the world, using Agile Methodologies such as Scrum and Kanban, 
+          communicating in both English and Spanish.
         </p>
       </div>
 

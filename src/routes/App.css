@@ -10,7 +10,7 @@
 }
 
 .app-container {
-  background-color: whitesmoke;
+  background-color: var(--main-color);
   display: flex;
   justify-content: center;
 }
