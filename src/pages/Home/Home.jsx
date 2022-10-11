@@ -41,7 +41,7 @@ const technologies = [
 const Home = () => {
   /*Function which gets called when the Button for download Resume gets clicked*/
   const onClickHandler = () => {
-    window.save(resume)
+    window.open(resume)
   }
 
   return (
