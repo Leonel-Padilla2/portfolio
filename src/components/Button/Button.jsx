@@ -3,10 +3,11 @@ import './Button.css'
 import dowloadLogo from '../../images/download-logo.png'
 import sendLogo from '../../images/send-logo.png'
 
-const Button = ({children, dowload, className}) => {
+const Button = ({children, dowload, className, ...remainingProps}) => {
   return (
     <button 
       className={`custom-button ${className}`}
+      {...remainingProps}
     >
       <h4>{children}</h4>
       {
