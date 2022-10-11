@@ -5,18 +5,17 @@
 }
 
 .home-container {
-  background-color: whitesmoke;
   min-height: 100vh;
   padding: 10px;
 }
 
 .about-me-container {
-  height: 80vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
 }
 
 .name-container {
@@ -55,7 +54,6 @@
 }
 
 @media screen and (max-width: 600px) {
-
   .technologies-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -67,5 +65,11 @@
   .about-me-container > p {
     padding: 0px 20px;
   }
-  
+}
+
+
+@media screen and (max-width: 315px) {
+  .technologies-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

@@ -37,6 +37,11 @@
   background-color: transparent;
   height: 40px;
   z-index: -1;
+  transition: 0.3s;
+}
+
+.navbar-displayer:active {
+  transform: scale(0.9);
 }
 
 .navbar-item {

@@ -5,12 +5,23 @@
 
 :root{  
   --main-font: 'Lato', sans-serif;
-  --font-color: #fff;
-  --main-color: #000;
+  --font-color: #000;
+  --main-color: whitesmoke;
+}
+
+*::-webkit-scrollbar {
+  background-color: whitesmoke;
+  width: 11px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(163, 163, 163);
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
 }
 
 .app-container {
-  background-color: gray;
+  background-color: var(--main-color);
   display: flex;
   justify-content: center;
 }

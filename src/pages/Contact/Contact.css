@@ -1,6 +1,5 @@
 .contact-container {
   min-height: 100vh;
-  background-color: whitesmoke;
   display: grid;
   align-content: center;
 }
@@ -22,3 +21,10 @@
   justify-content: space-evenly;
 }
 
+@media screen and (max-width: 315px) {
+  .social-media-container .list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
