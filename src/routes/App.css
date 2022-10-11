@@ -9,6 +9,17 @@
   --main-color: whitesmoke;
 }
 
+*::-webkit-scrollbar {
+  background-color: whitesmoke;
+  width: 11px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(163, 163, 163);
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
+}
+
 .app-container {
   background-color: var(--main-color);
   display: flex;
