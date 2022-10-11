@@ -25,6 +25,7 @@ const inputs = [
     type : 'email',
     errorMessage : 'You must provide a valid Email',
     required : true,
+    
   },
   {
     name : 'message',
@@ -71,7 +72,7 @@ const ContactForm = () => {
     >
         <h2>Or leave a message</h2>
         {
-          inputs.map( input => <Input key={input.name} {...input} />)
+          inputs.map( input => <Input className='form-input' key={input.name} {...input} />)
         }
         <Button 
          className='form-button'

@@ -19,10 +19,16 @@
     padding: 0px;
   }
 
-  .message-form > .form-input, .form-textarea {
+  .message-form > .form-input {
     min-width: 90%;
     max-width: 90%;
   }
 
-  
+  .form-input > .input {
+    width: 90%;
+  }
+
+  .form-input > .textarea {
+    width: 90%;
+  }
 }
