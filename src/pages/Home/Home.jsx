@@ -59,8 +59,8 @@ const Home = () => {
         </Button>
 
         <p>
-          I'm a Front-end Web developer, I'm always looking for new things to learn, I consider myself an autodidact, I like to learn new things 
-          and I'm good at it whether by myself or being helped by a teammate.
+          I'm a Front-end Web developer, I'm always looking for new things to learn, I enjoy learning new technologies and I'm good at it whether 
+          by myself or being helped by a work partner.
 
           I have had the opportunity to develop projects with people all around the world, using Agile Methodologies such as Scrum and Kanban, 
           communicating in both English and Spanish.

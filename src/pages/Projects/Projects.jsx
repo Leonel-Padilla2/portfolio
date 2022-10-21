@@ -24,7 +24,7 @@ const projects = [
     title : 'Personal Portfolio',
     gitHubURL: 'https://github.com/Leonel-Padilla2/portfolio',
     deployedURL: '/',
-    sumary: 'This is my personal portfolio which I have developed in order to show my personal projects, you can contact me and read a bit more about me as well.'
+    sumary: 'This is my personal portfolio which I have developed to show my personal projects, you can contact me and read a bit more about me as well.'
   }
 ]
 
@@ -34,8 +34,8 @@ const Projects = () => {
     <div className='projects-container'>
       <h2>These are the projects I have worked on</h2>        
       <p>
-        Every project here helped me to improve my development skills, every single project is totaly different with each other, 
-        that's why all of them compelled me to investigate, understand and learn new skills and subjects necesary for its development.
+        Every project here helped me to improve my development skills, every single project is totally different with each other, 
+        that's why all of them compelled me to investigate, understand and learn new skills and subjects necessary for its development.
       </p>
 
       <div className='projects-grid'>
