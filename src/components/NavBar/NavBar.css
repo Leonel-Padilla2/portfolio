@@ -13,9 +13,11 @@
   height: 60px;
 }
 
-.navbar-container h2 {
+.navbar-container > img {
   color: var(--font-color);
   cursor: pointer;
+  width: 60px;
+  height: auto;
 }
 
 .list-container {
