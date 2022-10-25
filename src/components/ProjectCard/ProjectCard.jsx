@@ -11,21 +11,26 @@ const ProjectCard = ({project}) => {
       <h2>{title}</h2>
 
       <div className='card-overlay'>
-        <TechCard
-          className='overlay-link'
-          image={githubLogo}
-          title='Repository'
-          url={gitHubURL}
-        />
+        <div className='access'>
+          <TechCard
+            className='overlay-link'
+            image={githubLogo}
+            title='Repository'
+            url={gitHubURL}
+          />
+          {
+            deployedURL &&
+            <TechCard
+              className='overlay-link'
+              image={webLogo}
+              title='Visit'
+              url={deployedURL}
+            />
+          }
+        </div>
+        
 
-        <TechCard
-          className='overlay-link'
-          image={webLogo}
-          title='Visit'
-          url={deployedURL}
-        />
-
-        <p>
+        <p className='sumary'>
           {sumary}
         </p>
       </div>
