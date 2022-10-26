@@ -21,7 +21,7 @@ const projects = [
   {
     img: RestaurantImage,
     title : 'Restaurant Application',
-    gitHubURL: '/',
+    gitHubURL: 'https://github.com/Leonel-Padilla/react-restaurante',
     sumary: 'This is a web restaurant application for inventory, clients, employees, purchasing, billing and user permissions management. Developed with JavaScript, React, Bootstrap and component libraries.'
   }
 ]
