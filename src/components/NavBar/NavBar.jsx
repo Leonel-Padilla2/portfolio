@@ -1,7 +1,8 @@
 import React from 'react'
 import { useState } from 'react'
-import menuLogo from  '../../images/menu-logo.png'
 import { Link, useNavigate } from 'react-router-dom'
+import menuLogo from  '../../images/menu-logo.png'
+import personalLogo from '../../images/personal-logo.png'
 import './NavBar.css'
 
 /*Array which contains routes info in order to map it and show them.*/
@@ -33,9 +34,12 @@ const NavBar = () => {
 
   return (
     <header className={`navbar-container ${activated && 'active'}`}>
-      <h2 onClick={()=> navigate('/')}>
-        Axcel P.
-      </h2>
+      <img 
+        className='logo'
+        src={personalLogo}
+        alt='personal-logo'
+        onClick={()=> navigate('/')}
+      />
 
       <button 
         className='navbar-displayer'

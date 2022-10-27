@@ -6,36 +6,33 @@ import './Projects.css'
 
 const projects = [
   {
-    img: RestaurantImage,
-    title : 'Restaurant Application',
-    gitHubURL: '/',
+    img: PortFolioImage,
+    title : 'Personal Portfolio',
+    gitHubURL: 'https://github.com/Leonel-Padilla2/portfolio',
     deployedURL: '/',
-    sumary: 'This web application was developed as a class project which name was "Software Engineering" this is a restaurant application for inventory, clients, employees, purchasing and billing management.'
+    sumary: 'This is my personal portfolio which I have developed to show my personal projects, you can contact me and read a bit more about me as well. Developed with JavaScript, React.'
   },
   {
     img: PomodoroImage,
     title : 'Pomodoro Application',
     gitHubURL: 'https://github.com/Leonel-Padilla/fpomodoro',
-    deployedURL: '/',
-    sumary: 'This application was developed as part of an event, this project was made with a team from people all over America, using Agile Methodologies.'
+    sumary: 'Web Pomodoro application which allows users to create a tasks list and check them when he finish them, also, allows the user to set up his work and rest time. Developed with JavaScript, React.'
   },
   {
-    img: PortFolioImage,
-    title : 'Personal Portfolio',
-    gitHubURL: 'https://github.com/Leonel-Padilla2/portfolio',
-    deployedURL: '/',
-    sumary: 'This is my personal portfolio which I have developed in order to show my personal projects, you can contact me and read a bit more about me as well.'
+    img: RestaurantImage,
+    title : 'Restaurant Application',
+    gitHubURL: 'https://github.com/Leonel-Padilla/react-restaurante',
+    sumary: 'This is a web restaurant application for inventory, clients, employees, purchasing, billing and user permissions management. Developed with JavaScript, React, Bootstrap and component libraries.'
   }
 ]
 
 const Projects = () => {
-
   return (
     <div className='projects-container'>
       <h2>These are the projects I have worked on</h2>        
       <p>
-        Every project here helped me to improve my development skills, every single project is totaly different with each other, 
-        that's why all of them compelled me to investigate, understand and learn new skills and subjects necesary for its development.
+        Every project here helped me to improve my development skills, every single project is totally different with each other, 
+        that's why all of them compelled me to investigate, understand and learn new skills and subjects necessary for its development.
       </p>
 
       <div className='projects-grid'>

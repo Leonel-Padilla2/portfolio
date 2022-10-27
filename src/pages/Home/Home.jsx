@@ -59,11 +59,10 @@ const Home = () => {
         </Button>
 
         <p>
-          I'm a Front-end Web developer, I'm always looking for new things to learn, I consider myself an autodidact, I like to learn new things 
-          and I'm good at it whether by myself or being helped by a teammate.
-
-          I have had the opportunity to develop projects with people all around the world, using Agile Methodologies such as Scrum and Kanban, 
-          communicating in both English and Spanish.
+          I'm a Front-end Web developer, I have two years of college and personal experience developing applications, I enjoy learning 
+          new technologies and I'm good at it whether by myself or being helped by a work partner. I have experience working as part 
+          of a team using agile methodologies and using GitHub as controller version, that why now I understand and know how to work 
+          and contribute in the best way to my team.
         </p>
       </div>
 

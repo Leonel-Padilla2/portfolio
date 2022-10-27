@@ -21,6 +21,7 @@
   font-size: 23px;
 }
 
+
 .card-overlay {
   opacity: 0;
   border-radius: 10px;
@@ -30,11 +31,16 @@
   height: 100%;
   position: absolute;
   transition: 0.4s;
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
-  align-items: center;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   z-index: -1;
+}
+
+.access {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card:hover > .card-overlay {
@@ -42,14 +48,27 @@
   opacity: 1;
 }
 
-.card-overlay > p {
+.sumary {
   grid-column-start: 1;
   grid-column-end: 3;
   align-self: start;
-  text-align: justify;
   padding: 10px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.sumary::-webkit-scrollbar {
+  background-color: transparent;
+  width: 2px;
+}
+
+.sumary::-webkit-scrollbar-thumb {
+  background-color: rgb(163, 163, 163);
+  border-radius: 10px;
+  border: 2px solid whitesmoke;
 }
 
 .overlay-link > * {
   color: white;
 }
+
