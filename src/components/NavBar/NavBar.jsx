@@ -8,15 +8,15 @@ import './NavBar.css'
 /*Array which contains routes info in order to map it and show them.*/
 const navBarRoutes = [
   {
-    route : '/',
+    route : '/portfolio',
     title :'Home'
   },
   {
-    route : '/projects',
+    route : 'portfolio/projects',
     title :'Projects'
   },
   {
-    route : '/contact',
+    route : 'portfolio/contact',
     title :'Contact Me'
   }
   
