@@ -45,7 +45,7 @@ const ContactForm = () => {
 
   const modalOnClose = () => {
     setModalData(current => ({current, visible: false}))
-    navigate('/')
+    navigate('/portfolio')
   }
 
   const handleSubmit = (e) => {
