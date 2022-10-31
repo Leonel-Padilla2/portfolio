@@ -16,7 +16,7 @@ const projects = [
     img: PomodoroImage,
     title : 'Pomodoro Application',
     gitHubURL: 'https://github.com/Leonel-Padilla/fpomodoro',
-    sumary: 'Web Pomodoro application which allows users to create a tasks list and check them when he finish them, also, allows the user to set up his work and rest time. Developed with React.'
+    sumary: 'Web Pomodoro application which allows users to create a tasks list and check them when he finishes them, also, allows the user to set up his work and rest time. Developed with React.'
   },
   {
     img: RestaurantImage,
