@@ -59,10 +59,9 @@ const Home = () => {
         </Button>
 
         <p>
-          I'm a Front-end Web developer, I have two years of college and personal experience developing applications, I enjoy learning 
-          new technologies and I'm good at it whether by myself or being helped by a work partner. I have experience working as part 
-          of a team using agile methodologies and using GitHub as controller version, that why now I understand and know how to work 
-          and contribute in the best way to my team.
+        I am a Front-end Web developer, I have been developing applications for the past two years, I enjoy learning new technologies, 
+        working with a developer's team that I can new things from. I have worked as part of a team using agile methodologies contributing 
+        at the work and advances of my teamwork.
         </p>
       </div>
 
