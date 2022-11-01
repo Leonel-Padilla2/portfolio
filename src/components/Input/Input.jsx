@@ -12,22 +12,14 @@ const Input = (props) => {
   return (
     <div className={`input-container ${className}`}>
       <label className='input-label'>{label}</label>
-      {
-        textarea ?
-          <textarea
-            className='textarea'
-            {...remainingProps}
-            focused={focused.toString()}
-            onBlur={handleOnBlur}
-          />
-        :
-          <input 
-            className='input'
-            {...remainingProps}
-            focused={focused.toString()}
-            onBlur={handleOnBlur}
-          />
-      }
+      
+      <input 
+        className={`${textarea ? 'textarea' : 'input'}`}
+        {...remainingProps}
+        focused={focused.toString()}
+        onBlur={handleOnBlur}
+      />
+      
       {
         focused && <span className='input-error-message'>{errorMessage}</span>
       }
