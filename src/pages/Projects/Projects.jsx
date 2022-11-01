@@ -9,7 +9,7 @@ const projects = [
     img: PortFolioImage,
     title : 'Personal Portfolio',
     gitHubURL: 'https://github.com/Leonel-Padilla2/portfolio',
-    deployedURL: '/',
+    deployedURL: 'https://leonel-padilla2.github.io/portfolio/',
     sumary: 'This is my personal portfolio which I have developed to show my personal projects, you can contact me and read a bit more about me as well. Developed with React.'
   },
   {

@@ -2,17 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './routes/App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom'; /*Using HashRouter because GitHub pages does not support BrowserRouter technologies*/
 import { ModalContextProvider } from './contexts/ModalContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <ModalContextProvider>
         <App />
       </ModalContextProvider>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
 
