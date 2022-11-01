@@ -14,18 +14,17 @@ const inputs = [
     label: 'Name',
     placeholder : 'Name',
     type : 'text',
-    errorMessage : 'This field is required and must contain a valid name: "First and last name" 3-20 characters',
+    errorMessage : 'This field is required and must contain a valid name: "First and last name".',
     required : true,
-    pattern : '^[A-za-z ]{3,20}',
+    pattern : "^(([a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð,.'-]{3,20}) ?){1,2}$",
   },
   {
     name : 'user_email',
     label : 'Email',
     placeholder : 'Email',
     type : 'email',
-    errorMessage : 'You must provide a valid Email',
+    errorMessage : 'You must provide a valid Email.',
     required : true,
-    
   },
   {
     name : 'message',
@@ -33,7 +32,8 @@ const inputs = [
     placeholder : 'Message Here',
     textarea: true,
     required : true,
-    errorMessage : 'This field is required.',
+    errorMessage : 'This field is required and must contain a valid message.',
+    pattern : "^(([a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð,.'-¿?¡!]{1,}) ?){1,}$",
   }
 ]
 
@@ -45,7 +45,7 @@ const ContactForm = () => {
 
   const modalOnClose = () => {
     setModalData(current => ({current, visible: false}))
-    navigate('/portfolio')
+    navigate('/')
   }
 
   const handleSubmit = (e) => {

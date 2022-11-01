@@ -70,6 +70,11 @@
   border-bottom-color: gray;
 }
 
+.textarea::placeholder, .textarea::marker {
+  position: absolute;
+  top: 5%;
+}
+
 .textarea:invalid ~ .input-error-message {
   display: block;
 }

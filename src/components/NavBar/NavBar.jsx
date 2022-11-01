@@ -8,15 +8,15 @@ import './NavBar.css'
 /*Array which contains routes info in order to map it and show them.*/
 const navBarRoutes = [
   {
-    route : '/portfolio',
+    route : '/',
     title :'Home'
   },
   {
-    route : 'portfolio/projects',
+    route : '/projects',
     title :'Projects'
   },
   {
-    route : 'portfolio/contact',
+    route : '/contact',
     title :'Contact Me'
   }
   
@@ -28,7 +28,7 @@ const NavBar = () => {
 
   const toggleActive = () => {
     if (window.innerWidth <= 600){
-      setActivated(curreent => !curreent)
+      setActivated(current => !current)
     }
   }
 
