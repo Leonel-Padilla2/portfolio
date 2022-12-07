@@ -1,10 +1,19 @@
 import ProjectCard from '../../components/ProjectCard/ProjectCard'
 import PortFolioImage from '../../images/portfolio-image.png'
 import PomodoroImage from '../../images/pomodoro-image.png'
-import RestaurantImage from '../../images/New-Project.jpg'
+import RestaurantImage from '../../images/restaurant-image.jpg'
+import EcommerceImage from '../../images/ecommerce-image.png'
 import './Projects.css'
 
+/*Array which contains Projects info in order to map it and show them.*/ 
 const projects = [
+  {
+    img: EcommerceImage,
+    title : 'E-commerce Application',
+    gitHubURL: 'https://github.com/Leonel-Padilla2/E-commerce',
+    deployedURL: 'https://leonel-padilla2.github.io/E-commerce',
+    sumary: 'E-commerce application where the user can see a list of products from FakeShop API and see more detailed information about every product, the user can add and remove products from the cart, increase and decrese its quantity as well. Developed with React, Redux, React-Redux and React-Router.'
+  },
   {
     img: PortFolioImage,
     title : 'Personal Portfolio',
