@@ -4,7 +4,7 @@ import githubLogo from '../../images/whitebg-github-logo.png'
 import webLogo from '../../images/web-logo.png'
 
 const ProjectCard = ({project}) => {
-  const {img, title, gitHubURL, deployedURL, sumary} = project
+  const {img, title, gitHubURL, deployedURL, sumary, technologies} = project
   return (
     <div className='card'>
       <img src={img} alt="project-illustation"/>
@@ -29,10 +29,13 @@ const ProjectCard = ({project}) => {
           }
         </div>
         
-
-        <p className='sumary'>
-          {sumary}
-        </p>
+        <div className='sumary'>
+          <p>{sumary}</p>
+          Developed with:
+          <ul className='project-technologies-list'>
+            {technologies.map(technology => <li>- {technology}</li>)}
+          </ul>
+        </div>
       </div>
     </div>
   )
