@@ -8,30 +8,34 @@ import './Projects.css'
 /*Array which contains Projects info in order to map it and show them.*/ 
 const projects = [
   {
-    img: EcommerceImage,
     title : 'E-commerce Application',
+    img: EcommerceImage,
     gitHubURL: 'https://github.com/Leonel-Padilla2/E-commerce',
     deployedURL: 'https://leonel-padilla2.github.io/E-commerce',
-    sumary: 'E-commerce application where the user can see a list of products from FakeShop API and see more detailed information about every product, the user can add and remove products from the cart, increase and decrese its quantity as well. Developed with React, Redux, React-Redux and React-Router.'
+    sumary: 'E-commerce application where the user can see a list of products from FakeShop API and see more detailed information about every product, the user can add and remove products from the cart, increase and decrese its quantity as well.',
+    technologies: ['React', 'Axios', 'Redux', 'React-Redux', 'React-Router', 'Fake Shop API']
   },
   {
-    img: PortFolioImage,
     title : 'Personal Portfolio',
+    img: PortFolioImage,
     gitHubURL: 'https://github.com/Leonel-Padilla2/portfolio',
     deployedURL: 'https://leonel-padilla2.github.io/portfolio/',
-    sumary: 'This is my personal portfolio which I have developed to show my personal projects, you can contact me and read a bit more about me as well. Developed with React.'
+    sumary: 'This is my personal portfolio which I have developed to show my personal projects, you can contact me and read a bit more about me as well.',
+    technologies: ['React','React-Router', 'EmailJS Service']
   },
   {
-    img: PomodoroImage,
     title : 'Pomodoro Application',
+    img: PomodoroImage,
     gitHubURL: 'https://github.com/Leonel-Padilla/fpomodoro',
-    sumary: 'Web Pomodoro application which allows users to create a tasks list and check them when he finishes them, also, allows the user to set up his work and rest time. Developed with React.'
+    sumary: 'Web Pomodoro application which allows users to create a tasks list and check them when he finishes them, also, allows the user to set up his work and rest time.',
+    technologies: ['React', 'React-Router']
   },
   {
-    img: RestaurantImage,
     title : 'Restaurant Application',
+    img: RestaurantImage,
     gitHubURL: 'https://github.com/Leonel-Padilla/react-restaurante',
-    sumary: 'This is a web restaurant application for inventory, user permissions, clients, billing, purchasing, and employees management. Developed with React, Bootstrap and component libraries.'
+    sumary: 'This is a web restaurant application for inventory, user permissions, clients, billing, purchasing, and employees management.',
+    technologies: ['React', 'Axios', 'React-Router', 'Bootstrap', 'NextUI library']
   }
 ]
 
