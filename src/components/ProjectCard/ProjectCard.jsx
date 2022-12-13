@@ -33,7 +33,7 @@ const ProjectCard = ({project}) => {
           <p>{sumary}</p>
           Developed with:
           <ul className='project-technologies-list'>
-            {technologies.map(technology => <li>- {technology}</li>)}
+            {technologies.map(technology => <li key={technology}>- {technology}</li>)}
           </ul>
         </div>
       </div>
