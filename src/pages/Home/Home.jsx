@@ -60,7 +60,7 @@ const Home = () => {
 
         <p>
         I am a Front-end Web developer, I have been developing applications for the past two years, I enjoy learning new technologies, 
-        working with a developer's team that I can new things from. I have worked as part of a team using agile methodologies contributing 
+        working with a developer's team from which I can learn new things. I have worked as part of a team using agile methodologies contributing 
         at the work and advances of my teamwork.
         </p>
       </div>
