@@ -6,7 +6,7 @@ import cssLogo from '../../images/css-logo.png'
 import jsLogo from '../../images/js-logo.png'
 import reactLogo from '../../images/react-logo.png'
 import githubLogo from '../../images/github-logo.png'
-import resume from '../../files/Axcel Leonel Sanchez Padilla Resume.pdf'
+import resume from '../../files/Axcel Sanchez Resume.pdf'
 import './Home.css'
 
 /*Array which contains Technologies info in order to map it and show them.*/ 
@@ -60,7 +60,7 @@ const Home = () => {
 
         <p>
         I am a Front-end Web developer, I have been developing applications for the past two years, I enjoy learning new technologies, 
-        working with a developer's team that I can new things from. I have worked as part of a team using agile methodologies contributing 
+        working with a developer's team from which I can learn new things. I have worked as part of a team using agile methodologies contributing 
         at the work and advances of my teamwork.
         </p>
       </div>

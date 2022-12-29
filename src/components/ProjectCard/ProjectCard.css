@@ -18,9 +18,8 @@
 }
 
 .card > h2 {
-  font-size: 23px;
+  font-size: 20px;
 }
-
 
 .card-overlay {
   opacity: 0;
@@ -70,5 +69,9 @@
 
 .overlay-link > * {
   color: white;
+}
+
+.project-technologies-list {
+  list-style: none;
 }
 
