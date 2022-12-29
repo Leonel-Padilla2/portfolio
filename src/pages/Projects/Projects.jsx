@@ -43,7 +43,7 @@ const projects = [
 const Projects = () => {
   return (
     <div className='projects-container'>
-      <h2>These are the projects I have worked on</h2>        
+      <h2>These are the React projects I have worked on!</h2>
       <p>
         Every project here helped me to improve my development skills, every single project is totally different from each other, 
         that's why all of them compelled me to investigate, understand and learn new skills and subjects necessary for its development.
