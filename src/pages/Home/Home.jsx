@@ -6,7 +6,7 @@ import cssLogo from '../../images/css-logo.png'
 import jsLogo from '../../images/js-logo.png'
 import reactLogo from '../../images/react-logo.png'
 import githubLogo from '../../images/github-logo.png'
-import resume from '../../files/Axcel Leonel Sanchez Padilla Resume.pdf'
+import resume from '../../files/Axcel Sanchez Resume.pdf'
 import './Home.css'
 
 /*Array which contains Technologies info in order to map it and show them.*/ 
