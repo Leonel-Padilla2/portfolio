@@ -12,8 +12,8 @@ const projects = [
     img: EcommerceImage,
     gitHubURL: 'https://github.com/Leonel-Padilla2/E-commerce',
     deployedURL: 'https://leonel-padilla2.github.io/E-commerce',
-    sumary: 'E-commerce application where the user can see a list of products from FakeShop API and see more detailed information about every product, the user can add and remove products from the cart, increase and decrese its quantity as well.',
-    technologies: ['React', 'Axios', 'Redux', 'React-Redux', 'React-Router', 'Fake Shop API']
+    sumary: 'E-commerce application where the user can see a list of products from Fake Store API and see more detailed information about every product, the user can add and remove products from the cart, increase and decrease cart product quantities as well.',
+    technologies: ['React', 'Axios', 'Redux', 'React-Redux', 'React-Router', 'Fake Store API']
   },
   {
     title : 'Personal Portfolio',
