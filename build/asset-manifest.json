@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ddc8cddb.css",
-    "main.js": "/portfolio/static/js/main.a2876b33.js",
+    "main.css": "/portfolio/static/css/main.c9029e92.css",
+    "main.js": "/portfolio/static/js/main.09df40ea.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/New-Project.jpg": "/portfolio/static/media/New-Project.323a2b10ae17f6dcc1a0.jpg",
+    "static/media/restaurant-image.jpg": "/portfolio/static/media/restaurant-image.323a2b10ae17f6dcc1a0.jpg",
     "static/media/pomodoro-image.png": "/portfolio/static/media/pomodoro-image.c7ea71f5a0dd625f1694.png",
-    "static/media/Axcel Leonel Sanchez Padilla Resume.pdf": "/portfolio/static/media/Axcel Leonel Sanchez Padilla Resume.720c37b5f36a740553b6.pdf",
+    "static/media/ecommerce-image.png": "/portfolio/static/media/ecommerce-image.1f5afb6201d263697349.png",
+    "static/media/Axcel Sanchez Resume.pdf": "/portfolio/static/media/Axcel Sanchez Resume.e54ff630bcf3921d9792.pdf",
     "static/media/portfolio-image.png": "/portfolio/static/media/portfolio-image.0183eea4313b0c7623fc.png",
     "static/media/personal-logo.png": "/portfolio/static/media/personal-logo.b11d1df92b712d9c0de0.png",
     "index.html": "/portfolio/index.html",
-    "main.ddc8cddb.css.map": "/portfolio/static/css/main.ddc8cddb.css.map",
-    "main.a2876b33.js.map": "/portfolio/static/js/main.a2876b33.js.map",
+    "main.c9029e92.css.map": "/portfolio/static/css/main.c9029e92.css.map",
+    "main.09df40ea.js.map": "/portfolio/static/js/main.09df40ea.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddc8cddb.css",
-    "static/js/main.a2876b33.js"
+    "static/css/main.c9029e92.css",
+    "static/js/main.09df40ea.js"
   ]
 }
