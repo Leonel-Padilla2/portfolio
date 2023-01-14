@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Axcel Sánchez",
+  "name": "Axcel Leonel Sánchez Padilla",
   "icons": [
     {
       "src": "favicon.ico",
@@ -9,12 +9,12 @@
     },
     {
       "src": "favicon.ico",
-      "type": "image/x-icon",
+      "type": "image/png",
       "sizes": "192x192"
     },
     {
       "src": "favicon.ico",
-      "type": "image/x-icon",
+      "type": "image/png",
       "sizes": "512x512"
     }
   ],
