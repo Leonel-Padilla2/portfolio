@@ -4,14 +4,13 @@
   align-items: flex-start;
   gap: 10px;
   padding: 10px;
-  height: 500px;
+  min-height: 500px;
 }
 
 .message-form > h2 {
   width: 100%;
   text-align: center;
 }
-
 
 @media screen and (max-width: 650px) {
   .message-form {
